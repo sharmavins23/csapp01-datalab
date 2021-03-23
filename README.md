@@ -3,6 +3,23 @@
 This repository contains the solution code for the first of 11 individual labs
 in the CS:APP (3e) course: Data Lab.
 
+## Overview
+
+The project implements seven functions on basic bit manipulation and both
+integer/floating point manipulation at the lowest level. These functions are
+split into portions; Each portion and their individual functions is listed in
+more detail below.
+
+## 1st Portion
+
+### Function 1.1: `bitXor`
+
+```c
+int bitXor(int x, int y);
+```
+
+Taking two inputs, this function outputs the value of `x XOR y`.
+
 # License TL;DR
 
 This project is distributed under the MIT license. This is a paraphrasing of a

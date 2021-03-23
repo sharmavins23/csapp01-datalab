@@ -134,7 +134,7 @@ NOTES:
 
 #endif
 
-// ===== 1 =====================================================================
+// ===== 1st Portion ===========================================================
 /*
  * bitXor - x^y using only ~ and &
  *   Example: bitXor(4, 5) = 1
@@ -152,7 +152,7 @@ int bitXor(int x, int y) { return 2; }
  */
 int tmin(void) { return 2; }
 
-// ===== 2 =====================================================================
+// ===== 2nd Portion ===========================================================
 /*
  * isTmax - returns 1 if x is the maximum, two's complement number,
  *     and 0 otherwise
@@ -179,10 +179,9 @@ int allOddBits(int x) { return 2; }
  *   Max ops: 5
  *   Rating: 2
  */
-
 int negate(int x) { return 2; }
 
-// ===== 3 =====================================================================
+// ===== 3rd Portion ===========================================================
 /*
  * isAsciiDigit - return 1 if 0x30 <= x <= 0x39 (ASCII codes for characters '0'
  * to '9') Example: isAsciiDigit(0x35) = 1. isAsciiDigit(0x3a) = 0.
@@ -213,7 +212,7 @@ int conditional(int x, int y, int z) { return 2; }
 
 int isLessOrEqual(int x, int y) { return 2; }
 
-// ===== 4 =====================================================================
+// ===== 4th Portion ===========================================================
 /*
  * logicalNeg - implement the ! operator, using all of
  *              the legal operators except !
@@ -238,7 +237,7 @@ int logicalNeg(int x) { return 2; }
  */
 int howManyBits(int x) { return 0; }
 
-// ===== float =================================================================
+// ===== Float Portion =========================================================
 /*
  * floatScale2 - Return bit-level equivalent of expression 2*f for
  *   floating point argument f.
