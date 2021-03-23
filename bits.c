@@ -13,6 +13,48 @@
  * case it's OK.
  */
 
+/*
+ * INTEGER CODING RULES
+ * Functions are constructed out of integers and expressions. All variables must
+ * be declared at the tops of functions.
+ *
+ * Expressions must use ONLY the following:
+ *  1.  Integer constants from 0 through 255 (0xFF), inclusively
+ *  2.  Function arguments and local variables (No globals allowed)
+ *  3.  Unary integer operations ! ~
+ *  4.  Binary integer operations & ^ | + << >>
+ *
+ * You are expressly forbidden to:
+ *  1.  Use any control constructs such as if, do, while, for, switch
+ *  2.  Define or use any macros
+ *  3.  Define any additional functions in the file
+ *  4.  Call any functions
+ *  5.  Use any other operations, such as && || - ?:
+ *  6.  Use any form of casting
+ *  7.  Use any data type other than int (no structs/arrays/unions)
+ *
+ * You may assume that your machine:
+ *  1.  Uses 2s complement, 32-bit representations of integers
+ *  2.  Performs right shifts arithmetically
+ *  3.  Has unpredictable behavior when shifting if shamt < 0 or shamt > 31
+ */
+
+/*
+ * FLOATING POINT CODING RULES
+ * For floating-point problems, you are allowed to use looping or conditions.
+ * You may also allowed to use both int and unsigned types.
+ * You may also use arbitrary int and unsigned constants of any size.
+ * Finally, you may use any arithmetic, logical, or comparison operations.
+ *
+ * You are expressly forbidden to:
+ *  1.  Define or use any macros
+ *  2.  Define any additional functions in the file
+ *  3.  Call any functions
+ *  4.  Use any form of casting
+ *  5.  Use any data type other than int or unsigned (no structs/arrays/unions)
+ *  6.  Use any floating-point data types, operations, or constants
+ */
+
 // ===== 1st Portion ===========================================================
 /*
  * bitXor - x^y using only ~ and &

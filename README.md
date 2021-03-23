@@ -59,6 +59,15 @@ x XOR y = ~(~x & ~y) & ~( x &  y)       Remove a ~ from first term
 
 This representation is now completely in AND and NOT operators.
 
+### Function 1.2: `tmin`
+
+```c
+int tmin(void);
+```
+
+Taking no inputs, without using any explicit values, this function returns the
+smallest two's complement integer achievable.
+
 # License TL;DR
 
 This project is distributed under the MIT license. This is a paraphrasing of a
