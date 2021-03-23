@@ -12,20 +12,7 @@ more detail below.
 
 ## Testing
 
-The `./dlc` Data Lab Compiler handles checking for correctness of code. In order
-to utilize this, use the following command:
-
-```
-  unix> ./dlc bits.c
-```
-
-To count the number of operations within code, use the following:
-
-```
-  unix> ./dlc -e bits.c
-```
-
-Finally, to test the validity of functions, use the `./btest` testing scripts.
+To test the validity of functions, use the `./btest` testing scripts.
 
 ```
   unix> ./btest -h
@@ -40,12 +27,15 @@ Finally, to test the validity of functions, use the `./btest` testing scripts.
     -T <lim>  Set timeout limit to lim
 ```
 
+There is a separate tester called `./dlc` for testing validity of the code files
+themselves; However, I have not successfully executed this validity checker on
+my end.
+
 ## 1st Portion
 
 ### Function 1.1: `bitXor`
 
 ```c
-// xx Operations
 int bitXor(int x, int y);
 ```
 
