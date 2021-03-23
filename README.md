@@ -45,10 +45,29 @@ Finally, to test the validity of functions, use the `./btest` testing scripts.
 ### Function 1.1: `bitXor`
 
 ```c
+// xx Operations
 int bitXor(int x, int y);
 ```
 
-Taking two inputs, this function outputs the value of `x XOR y`.
+Taking two inputs, this function outputs the value of `x XOR y`. This function
+may only use the logical AND `&` and logical NOT `~` operators.
+
+From a circuit standpoint, the XOR function is represented by the following
+excitation equation:
+
+```
+x XOR y = (x | y) & (~x | ~y)
+```
+
+We can transform this into the following:
+
+```
+x XOR y =  ( x |  y) &  (~x | ~y)       Original
+x XOR y =  ( x |  y) & ~( x &  y)       Remove a ~ from second term
+x XOR y = ~(~x & ~y) & ~( x &  y)       Remove a ~ from first term
+```
+
+This representation is now completely in AND and NOT operators.
 
 # License TL;DR
 
