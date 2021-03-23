@@ -10,6 +10,36 @@ integer/floating point manipulation at the lowest level. These functions are
 split into portions; Each portion and their individual functions is listed in
 more detail below.
 
+## Testing
+
+The `./dlc` Data Lab Compiler handles checking for correctness of code. In order
+to utilize this, use the following command:
+
+```
+  unix> ./dlc bits.c
+```
+
+To count the number of operations within code, use the following:
+
+```
+  unix> ./dlc -e bits.c
+```
+
+Finally, to test the validity of functions, use the `./btest` testing scripts.
+
+```
+  unix> ./btest -h
+  Usage: ./btest [-hg] [-r <n>] [-f <name> [-1|-2|-3 <val>]*] [-T <time limit>]
+    -1 <val>  Specify first function argument
+    -2 <val>  Specify second function argument
+    -3 <val>  Specify third function argument
+    -f <name> Test only the named function
+    -g        Format output for autograding with no error messages
+    -h        Print this message
+    -r <n>    Give uniform weight of n for all problems
+    -T <lim>  Set timeout limit to lim
+```
+
 ## 1st Portion
 
 ### Function 1.1: `bitXor`
